@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load humanize %}
+{% block contents %}
+<div class='row mt-5'>
+    <div class='col-12'>
+        <th scope='row'>{{ product.id }}</th>
+        <th scope='row'>{{ product.name }}</th>
+        <th scope='row'>{{ product.price|intcomma }} 원</th>
+        <th scope='row'>{{ product.register_date|date:'Y-m' }}</th>
+        </tr>
+    </div>
+</div>
+
+
+{% endblock %}
